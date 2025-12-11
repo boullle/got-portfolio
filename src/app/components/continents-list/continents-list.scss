@@ -1,0 +1,9 @@
+.container-items {
+  display: flex;
+  flex-wrap: wrap;      /* Retour automatique à la ligne */
+  gap: 20px;            /* Espace entre les cartes */
+  justify-content: center; /* Optionnel : centre */
+}
+h1{
+    text-align: center;
+}

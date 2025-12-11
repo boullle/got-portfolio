@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --noir:black;
+    --beige:#D2B48C;
+}
+
+h1, h2 {
+  font-family: 'MedievalSharp', cursive;
+}
+
+p, strong,input {
+  font-family: 'IM Fell English', serif;
+}
+body {
+  background-color: #CC7722;
+}
+input {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  font-size: 16px;
+  background-color: green;
+  color: var(--noir);
+}
+input::placeholder {
+  color: var(--beige);
+}

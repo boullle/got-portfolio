@@ -1,4 +1,4 @@
-export interface Character {
+export interface Characters {
      id: number,
     firstName: string,
     lastName: string,
