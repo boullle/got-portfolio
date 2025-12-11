@@ -1,0 +1,31 @@
+.container-items {
+  display: flex;
+  flex-wrap: wrap;      /* Retour automatique à la ligne */
+  gap: 20px;            /* Espace entre les cartes */
+  justify-content: center; /* Optionnel : centre */
+}
+
+.character-card {
+  width: 300px;         /* Taille fixe de ton image */
+  background:#D2B48C;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.character-card img {
+  width: 100%;          /* L'image prend toute la largeur */
+  height: 400px;        /* Taille identique à ce que tu avais */
+  object-fit: cover;    /* Garde un bon cadrage */
+  border-radius: 8px;
+}
+
+.character-card:hover {
+  transform: scale(1.05); /* Zoom léger */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
