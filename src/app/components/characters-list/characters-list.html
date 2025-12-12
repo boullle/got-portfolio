@@ -4,7 +4,7 @@
     <div class="character-card">
       <img [src]="character.imageUrl" [alt]="character.fullName" width="300" height="400" />
       <h1>{{ character.fullName }}</h1>
-      <p>{{ character.title }}</p>
+      <p>{{ character.title | emoticone }}</p>
       <strong>{{ character.family }}</strong>
     </div>
     }@empty {
@@ -12,3 +12,5 @@
     }
   </div>
 </div>
+<div [class.ready]="isReady"><h1>Hello les amis</h1></div>
+<button (click)="toggleReady()">toggle</button>

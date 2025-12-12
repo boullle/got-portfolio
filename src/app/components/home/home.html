@@ -1,0 +1,12 @@
+
+<input #searchInput type="text" placeholder="Chercher un personnage" (input)="onSearch(searchInput.value)">
+
+
+@if(characters) {
+  <app-characters-list [characters]="filteredCharacters"/>
+}
+@if(continents) {
+  <app-continents-list [continents]="continents"/>
+}
+
+
