@@ -6,9 +6,10 @@ import { Characters } from './shared/models/characters.model';
 import { ContinentService } from './shared/services/continent';
 import { ContinentsList } from './components/continents-list/continents-list';
 import { Continents } from './shared/models/continents.model';
+import { Header } from "./core/header/header";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,],
+  imports: [RouterOutlet, Header],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
