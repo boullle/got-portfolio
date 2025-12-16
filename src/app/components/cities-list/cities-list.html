@@ -1,5 +1,6 @@
-
-<div [formGroup]="cityForm">
+<button (click)="displayAddCityForm()">{{displayCityForm ?'Fermer le formulaire':'Ajouter une ville'}}</button>
+@if(displayCityForm) {
+  <div [formGroup]="cityForm">
   <input type="text"
     name="name"
     placeholder="Nom de la ville"
@@ -27,6 +28,8 @@
   />
   <button (click)="addCity()" >Add City</button>
 </div>
+}
+
 
 
 @for (city of cities;track city.id) {
