@@ -3,12 +3,15 @@
     --noir:black;
     --beige:#D2B48C;
 }
+button {
+  background-color: rgba(214, 180, 106, 0.95);
+}
 
-h1, h2 {
+h1, h2, label, input, button {
   font-family: 'MedievalSharp', cursive;
 }
 
-p, strong,input {
+p, strong  {
   font-family: 'IM Fell English', serif;
 }
 body {

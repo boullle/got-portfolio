@@ -1,3 +1,5 @@
 <h1><strong>{{currentTitle}}</strong> - (Title)</h1>
-<app-cities-list [cities]="cities"/>
+<app-cities-list 
+[cities]="cities" 
+(cityCreated)="addCity($event)"/>
 <router-outlet/>

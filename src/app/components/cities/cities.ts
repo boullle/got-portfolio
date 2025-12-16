@@ -38,4 +38,7 @@ export class Cities implements OnInit {
     private getTitle(){
        this.currentTitle=this.titleService.getTitle();
     }
+    protected addCity(newCity:citiesModel):void{
+     this.cities=[...this.cities, newCity];     
+    }
 }
