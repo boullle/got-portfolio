@@ -20,4 +20,13 @@ describe('CitiesList', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+  it('should toggle displayAddCityForm when displayCityForm is true', () => {
+    expect(component['displayCityForm']).toBeFalsy();
+    component['displayAddCityForm']();
+    expect(component['displayCityForm']).toBeTruthy();
+    component['displayAddCityForm']();
+    expect(component['displayCityForm']).toBeFalsy();
+  })
+    
+  });
+
